@@ -3,7 +3,10 @@
 
 {% block body %}
   <h1>Welcome! Login to schedule your melon tasting!</h1>
-
-  <a href="/scheduler">Login</a>
+  <form action="submit" method="post">
+    <input placeholder="Enter username" type="text" name="username" id="username">
+    <button type="login" id="login-btn">Login</button>
+    <a href="/scheduler">Login</a>
+  </form>
 
 {% endblock %}
